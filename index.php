@@ -9,12 +9,12 @@
 
    <h1>Exemplo PHP</h1>
 
-   <?php 
+   <?php
 
       // echo "Auto-save ativado";
 
       $nome = "Bianca Moraes";
-      echo "<p>O meu nome é $nome</p>"
+      echo "<p>O meu nome é $nome!</p>"
 
    ?>
    
