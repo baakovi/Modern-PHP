@@ -136,9 +136,29 @@
 
    ## O PHP por dentro 
 
-   <p><b>Entendendo melhor os scripts PHP:</b> <code> < ? php ? > </code></p>
+   <p><b>Entendendo melhor os scripts PHP:</b> <code> < ? php ? > </code>, é possível delimitar as tags PHP por:</p>
    
-   <p></p>
+   <p><i>Super tag PHP:</i> <code> < ? php ? > </code>, se tiver apenas um único comando não é obrigatório o uso dos ';' no final.</p>
+   
+   <p><i>Short open tag:</i> <code> < ? ? > </code>, não muito recomendado.</p>
+
+   <p><i>ASP tag:</i> <code> < % % > </code>, necessário configurar a partir do PHP 6.0 para funcionar.</p>
+
+   <p><i>Short tag PHP:</i> <code> < ?= "CursoemVídeo" ? > </code>, só funciona quando for mostrar na tela um 'echo/print'.</p>
+
+   <p>O PHP funciona como um pré-processamento, como mostra em seu nome = Hypertext <b>Preprocessor</b>. O Zend Engine, que processa os comando da linguagem, pré-processa o código PHP gerada, enviando as saídas/resultados (output) para o cliente em formato HTML.</p>
+
+   ##
+
+   ## Variáveis e Constantes no PHP
+
+   <p><b>O que são variáveis e constantes?</b> Em hardware, todo computador ou dispositivo, tem uma coisa em comum dentro deles, a memória RAM (memória volátil/principal). Uma memória é um grande bloco vazio, um armário, cheio de gavetas e compartimentos. Todos esses espaços são identificados e capazes de serem acessados pelo sistema operacional, ocupando um espaço da memória, o restante fica para salvar outros programas/arquivos. Uma nova informação inserida dentro do dispositivo é reservado um espaço dentro desse bloco. Um dado em uma determinada gaveta é uma variável, podendo ser substituída por outro valor.</p>
+   
+   <p><code>$variavel</code>: esse sifrão antes do nome da variável é algo padrão do PHP para a declaração de variáveis. <code>$sobrenome = "Guanabara"</code>. Toda variável ou toda constante salva no sistema é guardada no servidor, mostrando o resultado para o cliente.</p>
+   
+   <p><b>Regras para nomes identificadores:</b> variáveis sempre começam com o <code>símbolo $</code>. O segundo nome pode ser <i>letra</i> ou o <i>símbolo _</i>, não pode ser número. Aceita caracteres [a-z], [A-Z], [0-9] e [_]. Aceita caracteres da tabela <i>ASCII</i> (ç, diversos acentos...) a partir de 128. A linguagem é <i>case sensitive</i> em relação aos nomes, uma variável escrita em minúsculo é uma coisa, o mesmo nome em maiúsculo é outra variável. Nomes especiais como <code>$this</code> não podem ser usados como variáveis, pois são identificadores reservados da linguagem, usados para outros casos.</p>
+   
+   <p><b>Recomendações de nomes para variáveis/constantes:</b> Tente dar nomes <b>claros</b> e de <b>fácil</b> identificação. Evite nomes muito <b>curtos</b> ou muito <b>longos</b>. Defina um <b>padrão</b> e siga em todo o projeto (por exemplo, todas as variáveis de um projeto tem letras minúsculas). Para <b>variáveis</b>, dê preferência a letras <b>minúsculas</b>. Para <b>constantes</b>, dê preferência a letras <b>maiúsculas</b>. Use <b>camelCase</b> para métodos e atributos. Use <b>SNAKE_CASE</b> para nomear constantes.</p>
    
    <p></p>
 
